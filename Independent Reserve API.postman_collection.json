@@ -390,7 +390,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "Public methods are accessed via HTTP GET and do not require an authentication token to be passed."
 		},
 		{
 			"name": "Private",
@@ -1017,6 +1018,7 @@
 					"response": []
 				}
 			],
+			"description": "Private methods are accessed via HTTP POST and require a valid authentication token to be passed. Parameters for all private methods, including the three parameters to authenticate the call, must be posted as a JSON object.\n\nSee Pre-request Script to better understand how the authentication works.",
 			"event": [
 				{
 					"listen": "prerequest",
