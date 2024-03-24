@@ -1,4 +1,4 @@
-# ir-api-postman-collections
+# ir-api-postman-collection
 
 Last update: March 2024.
 
@@ -13,4 +13,3 @@ Please refer [https://www.independentreserve.com/au/features/api](https://www.in
 In order to access private endpoints set collection variables.
 
 Go though the Pre-request Script for Private folder to see how the private requests are signed before being set to the server. You can adopt it to use in your own project.
-
