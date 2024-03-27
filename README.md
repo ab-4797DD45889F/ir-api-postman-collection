@@ -12,4 +12,4 @@ Please refer [https://www.independentreserve.com/au/features/api](https://www.in
 
 In order to access private endpoints set collection variables.
 
-Go though the Pre-request Script for Private folder to see how the private requests are signed before being set to the server. You can adopt it to use in your own project.
+Go though the Pre-request Script for Private folder to see how the private requests are signed before being sent to the server. You can adopt it to use in your own project or migrate it to any other programming language.
