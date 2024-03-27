@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "bac84d09-aea5-4c28-bd8d-93f98489a681",
 		"name": "Independent Reserve API",
-		"description": "# Intro\n\nThis Postman collection is designed to simplify integration and testing process for third party developers. This accelerates development, fosters a better understanding of the API, and encourages more developers to adopt and integrate the API into their projects.\n\nPlease refer [https://www.independentreserve.com/au/features/api](https://www.independentreserve.com/au/features/api) for more detailed description.\n\n# Authentication and private methods\n\nIn order to access private endpoints set collection variables.\n\nGo though the Pre-request Script for Private folder to see how the private requests are signed before being set to the server. You can adopt it to use in your own project.",
+		"description": "# Intro\n\nThis Postman collection is designed to simplify integration and testing process for third party developers. This accelerates development, fosters a better understanding of the API, and encourages more developers to adopt and integrate the API into their projects.\n\nPlease refer [https://www.independentreserve.com/au/features/api](https://www.independentreserve.com/au/features/api) for more detailed description.\n\n# Authentication and private methods\n\nIn order to access private endpoints set collection variables.\n\nGo though the Pre-request Script for Private folder to see how the private requests are signed before being sent to the server. You can adopt it to use in your own project or migrate it to any other programming language.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "436652"
 	},
@@ -1062,7 +1062,7 @@
 							"",
 							"    for (const key in payload) {",
 							"        const valueByKey = payload[key];",
-							"        parameters.push(Array.isArray(valueByKey) ? `${key}=${valueByKey.join(',')}` : valueByKey === null ? `${key}=` : `${key}=${valueByKey}`);",
+							"        parameters.push(valueByKey === null ? `${key}=` : Array.isArray(valueByKey) ? `${key}=${valueByKey.join(',')}` : `${key}=${valueByKey}`);",
 							"    }",
 							"",
 							"    const message = parameters.join(',');",
